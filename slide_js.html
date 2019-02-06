@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Slide</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(".class1").click(function(){
+          $(".class2").slideToggle("slow");
+        })
+      })
+    </script>
+    <style media="screen">
+      .class1, .class2{
+        padding: 5px;
+        text-align: center;
+       background-color: #e5eeaa;
+       border: solid 1px #c3c3c3;
+      }
+      .class2
+      {
+        padding: 50px;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="class1">
+      Click here to slide up and down
+    </div>
+    <div class="class2">
+      Hello Ranjeet Patel. Keep it up.
+    </div>
+  </body>
+</html>
